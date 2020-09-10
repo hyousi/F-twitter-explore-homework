@@ -1,0 +1,26 @@
+@use "variables";
+
+.login-form {
+  padding: variables.$font-size-base * 2;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  border: 1px solid variables.$border-color;
+  border-radius: variables.$border-radius-base;
+
+  > * {
+    margin-bottom: variables.$font-size-base;
+  }
+
+  input {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid variables.$border-color;
+    background-color: variables.$body-bg;
+    color: variables.$white;
+  }
+}
+
+.text-center {
+  text-align: center;
+}
