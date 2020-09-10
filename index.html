@@ -8,7 +8,7 @@
   <title>Title</title>
 </head>
 <body>
-  <header>
+  <header class="header">
     <h1>Twitter</h1>
     <ul>
       <li><button class="btn btn-outline-primary">登录</button></li>
@@ -18,12 +18,14 @@
   
   <main>
     <form class="login-form">
-      <h2>查看世界上正在发生的事情</h2>
-      <input type="text" placeholder="电话、邮件地址或用户名"><br>
-      <input type="text" placeholder="密码"><br>
+      <h1>查看世界上正在发生的事情</h1>
+      <label for="username">电话、邮件地址或用户名</label>
+      <input id="username" type="text">
+      <label for="password">密码</label>
+      <input id="password" type="text">
       <a href="#">忘记密码?</a>
       <button class="btn btn-outline-primary">登录</button>
-      <div>或</div>
+      <div class="text-center">或</div>
       <button class="btn btn-primary">注册</button>
     </form>
   </main>

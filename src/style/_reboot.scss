@@ -7,7 +7,7 @@ html {
 }
 
 body {
-  @include theme($body-bg, $white);
+  @include theme($body-bg, $color-base);
   font-size: $font-size-base;
   background-color: $body-bg;
   line-height: $line-height-base;
@@ -25,10 +25,11 @@ ol {
 }
 
 a {
-  color: $link-color;
+  color: $primary-color;
+  text-decoration: none;
 
   &:hover {
-    color: $link-hover-color;
+    text-decoration: underline;
   }
 }
 
