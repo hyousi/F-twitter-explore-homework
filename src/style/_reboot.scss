@@ -7,9 +7,8 @@ html {
 }
 
 body {
-  font-family: $font-family-base;
+  @include theme($body-bg, $white);
   font-size: $font-size-base;
-  color: $color-base;
   background-color: $body-bg;
   line-height: $line-height-base;
 }

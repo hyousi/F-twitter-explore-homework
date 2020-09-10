@@ -2,3 +2,8 @@
   margin-top: 0;
   font-size: $font-size;
 }
+
+@mixin theme($background-color, $on-background-color) {
+  background-color: $background-color;
+  color: $on-background-color;
+}
