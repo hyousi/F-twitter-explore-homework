@@ -1,7 +1,7 @@
 @use "variables";
 @use "mixins";
 
-.btn {
+%btn {
   border-radius: variables.$border-radius-base * 3;
   border: 1px solid transparent;
   padding: variables.$font-size-base * 0.2 variables.$font-size-base * 1.5;
@@ -9,10 +9,12 @@
 }
 
 .btn-primary {
+  @extend %btn;
   @include mixins.button-variant(variables.$primary-color, variables.$white);
 }
 
 .btn-outline-primary {
+  @extend %btn;
   @include mixins.button-outline-variant(
     variables.$body-bg,
     variables.$primary-color
