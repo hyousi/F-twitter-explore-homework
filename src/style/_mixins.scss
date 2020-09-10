@@ -3,7 +3,19 @@
   font-size: $font-size;
 }
 
-@mixin theme($background-color, $on-background-color) {
-  background-color: $background-color;
-  color: $on-background-color;
+@mixin theme($background, $on-background) {
+  background-color: $background;
+  color: $on-background;
+}
+
+@mixin button-variant($background, $on-background) {
+  background-color: $background;
+  border-color: $background;
+  color: $on-background;
+}
+
+@mixin button-outline-variant($background, $border) {
+  background-color: $background;
+  border-color: $border;
+  color: $border;
 }
