@@ -12,10 +12,19 @@
   background-color: $background;
   border-color: $background;
   color: $on-background;
+
+  &:hover {
+    background-color: lighten($background, 10%);
+    border-color: lighten($background, 10%);
+  }
 }
 
 @mixin button-outline-variant($background, $border) {
   background-color: $background;
   border-color: $border;
   color: $border;
+
+  &:hover {
+    background-color: lighten($background, 10%);
+  }
 }

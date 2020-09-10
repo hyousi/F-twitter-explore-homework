@@ -6,6 +6,11 @@
   border: 1px solid transparent;
   padding: variables.$font-size-base * 0.2 variables.$font-size-base * 1.5;
   outline: none;
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+  }
 }
 
 .btn-primary {
