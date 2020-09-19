@@ -6,12 +6,15 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  //TODO feedback: 我就不明白了，为什么你就是对em情有独钟？
+  //TODO feedback: 既然指定了header的高度，又使用了flex来垂直居中，为什么垂直方向还要给padding？
   padding: variables.$font-size-base variables.$font-size-base * 2;
   height: 10vh;
 
   ul {
     display: flex;
     > * {
+      //TODO feedback: 你不要告诉我你这个padding-left是用来隔开两个button的
       padding-left: variables.$font-size-base * 0.5;
     }
   }

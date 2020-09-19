@@ -1,6 +1,7 @@
 @use "variables";
 @use "mixins";
-
+//TODO feedback 对button的设计思路很不错，对@extend和@include的使用理解的很到位
+// TODO feedback 还使用了%，很不错
 %btn {
   border-radius: variables.$border-radius-base * 3;
   border: 1px solid transparent;

@@ -5,5 +5,6 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+  //TODO feedback: 不要给main指定高度的情况下，如果实现同样的效果？
   height: 90vh;
 }
